@@ -1,0 +1,31 @@
+
+<% col = 'col3' %>
+<div id="container" class="transitions-enabled clearfix">
+
+	<% @photos.each do |photo| %>
+		<div class="box shadow <%=col%>" data-id="<%=photo[:id]%>">
+			<% if @embed %>
+				<embed src="<%=photo[:url]%>" width="375" height="225" />
+			<% else %>
+				<img class="box-image" src="<%=photo[:url]%>" alt="#{photo[:title]}"  /> 
+			<% end %>
+        	
+			
+			<div class='photoInfo'>
+				<p>
+				<%= "Photo title is #{photo[:title]} with #{photo[:views]} views" %>
+				<br/>
+				<%= "Tags are #{photo[:tags]}" %>
+				</p>
+			</div>
+			<hr />
+			<div class'comments' style="padding-left: 3px;">
+				<h3>Comments</h3>
+				<p>adfadf</p>
+				<p>adfadfsdfgsdfg</p>
+				<p>adfadfsf</p>
+			</div>
+		</div>
+	<% end %>
+
+</div>

@@ -1,0 +1,42 @@
+<h3>Find Available Domains</h3>
+
+<form action="available" method="post">
+<div>
+<label for=tld>
+Top-Level Domain:
+</lable>
+</div>
+<div>
+<input type=textbox name="tld" style="width: 30px">
+</div>
+
+<div>
+<label for=prefix>
+Prefix:
+</lable>
+</div>
+<div>
+<input type=textbox name="prefix" style="width: 30px">
+</div>
+
+<div>
+<label for=suffix>
+Suffix:
+</lable>
+</div>
+<div>
+<input type=textbox name="suffix" style="width: 30px">
+</div>
+
+<div>
+<label for=dnsnames>
+Search Words:
+</label>
+</div>
+<div style="width: 100%">
+
+<textarea name="dnsnames" wrap=physical style="width: 300px; margin-right: 6px; height: 500px"></textarea>	
+
+</div>
+<input type=submit value="check availability" />
+</form>
